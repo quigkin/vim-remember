@@ -1,0 +1,64 @@
+*remember.txt*	For Vim version 8.0	Last change: 2017 November 6
+*remember*
+
+Personal help for cool Vim stuff I can't remember.
+
+===============================================================================
+CONTENTS
+
+	1. Normal Mode.......................................|remember-normal|
+	2. Visual Mode.......................................|remember-visual|
+	3. Insert Mode.......................................|remember-insert|
+	4. Notes.............................................|remember-notes|
+
+===============================================================================
+1. Normal Mode                                         *remember-normal*
+
+   - :wall : Save modified buffers
+   - :x : Save buffer only if modified, then exit (better than :wq)
+   - ]] : next section
+   - ]m : next method
+   - [m : back to the start of the method
+   - ) : Next sentence
+   - CTRL-D : Down half a page
+   - CTRL-U : Up half a page
+   - ~ Uppercase a letter (works on ranges)
+   - z commands:
+      - z : Current line at the top
+      - z. : current line at the center
+      - z- : current line at the bottom
+
+   - /<C-R><C-W>: Pull word into command line (or search)
+   - :reg : list registers (and show what’s in them)
+
+===============================================================================
+2. Visual Mode                                         *remember-visual*
+
+   - SHIFT-[LEFT/RIGHT] : Shift one word left or right
+   - J : Join the highlighted lines, removing unnecessary whitespace.
+   - va' : select a single-quoted string (also works with " and `)
+   - vi' : select the contents of a single-quoted string
+   - vab : select a "block" (works differently in different langs)
+   - vat : select a <tag> and its contents (use i instead of a for just
+     contents)
+
+===============================================================================
+3. Insert Mode                                         *remember-insert*
+
+   - <C-N>: Complete word
+   - <C-N><C-P>: Complete word (?)
+   - <C-X><C-L>: Complete line (!!)
+   - \cc: <Leader>cc Comment out all selected rows with a single-line comment
+     (//) — part of NERDCommenter
+   - \\w: Navigate to a word with EasyMotion’s help (works with any navigation
+     commands)
+
+
+===============================================================================
+4. NOTES                                               *remember-notes*
+
+Rebuild the tags file with the following command: >
+   :helpt /path/to/this/directory
+<
+
+
